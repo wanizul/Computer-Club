@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Computer Club</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <style>
+            .background{
+                height: 130%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="background">
+            <div class="navbar">
+                <img src="logo.png" class="logo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="clubinfo.html">Club Info</a></li>
+                    <li><a href="clubactivity.html">Activity</a></li>
+                    <li><a href="clubregister.html">Register</a></li>
+                    <li><a href="clubcontact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+        <div class="contact-section">
+            <div class="contact-info">
+                <div><i class="fa-solid fa-phone"></i>07 8627482</div>
+                <div><i class="fa-solid fa-fax"></i>212-693-2377</div>
+                <div><i class="fa-solid fa-location-dot"></i>Tiram, Johor Bahru</div>
+                <div><i class="fa-solid fa-envelope"></i>CompClub@gmail.com</div>
+            </div>
+            <div class="contact-form">  
+                <h1>Contact Us</h1> 
+                <form class="contact" action="" method="post">
+                    <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+                    <input type="email" name="email" class="text-box" placeholder="Your Email" required>
+                    <textarea type="message" rows="5"  placeholder="Your Message" required></textarea>
+                    <input type="submit" name="submit" class="send-btn" value="Send" onclick="msg()">
+                    <script>
+                        function msg() {
+                          alert("Message sent ! Thank You for contacting us.");
+                        }
+                    </script>
+                </form>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

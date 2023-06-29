@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>Computer Club</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+        <style>
+            .background{
+                height: 130%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="background">
+            <div class="navbar">
+                <img src="logo.png" class="logo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="clubinfo.html">Club Info</a></li>
+                    <li><a href="clubactivity.html">Activity</a></li>
+                    <li><a href="clubregister.html">Register</a></li>
+                    <li><a href="clubcontact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="registerform">
+                <h1>REGISTRATION FORM</h1>
+            </div>
+            <div class="main">
+                <form action="/action_page.php"><br>
+                    <div id="name">
+
+                    <h2 class="name">NAME</h2>
+                    <input class="studname" type="text" name="name" maxlength="49">
+
+                    <h2 class="name">IC Number</h2>
+                    <input class="ic" type="text" name="ic" maxlength="12">
+        
+                    <h2 class="name">USERNAME</h2>
+                    <input class="username" type="text" name="Username" minlength="5" maxlength="12">
+        
+                    <h2 class="name">PASSWORD</h2>
+                    <input class="password" type="text" name="Password" minlength="5" maxlength="12">
+        
+                    <h2 class="name">HOME ADDRESS</h2>
+                    <div class="regaddress">
+                        <textarea rows="5" cols="50" name="address"></textarea>
+                    </div>
+                    
+                    <h2 class="gender">GENDER</h2>
+                    <div class="reggender">
+                        <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                    </div>
+                    
+                        
+                    <h2 class="name">EMAIL ADDRESS</h2>
+                    <input class="email" type="text" name="Email">
+
+                    <h2 class="name">CLASS</h2>
+                    <div class="regclass">
+                    <label for="class"></label>
+                    <select id="class" name="class">
+                        <option value="1 Amanah">1 Amanah</option>
+                        <option value="1 Bestari">1 Bestari</option>
+                        <option value="1 Cerdik">1 Cerdik</option>
+                    </select>
+                    </div>
+
+                    <h2 class="name">AGE</h2>
+                    <input class="age" type="number" name="Age">
+        
+                    <h2 class="name">PHONE NUMBER</h2>
+                    <div class="regnumb">
+                        <input type="tel" id="phone" name="phone" placeholder="0123456789" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                    </div>
+                    
+                    <h2 class="interest">INTEREST</h2>
+                    <div class="reginterest">
+                        <input type="checkbox" id="interest" name="interest" value="Phyton">
+                        <label for="interest">Phyton</label>
+                        <input type="checkbox" id="interest" name="interest" value="Javascript">
+                        <label for="interest">Javascript</label>
+                        <input type="checkbox" id="interest" name="interest" value="Java">
+                        <label for="interest">Java</label>
+                        <input type="checkbox" id="interest" name="interest" value="C#">
+                        <label for="interest">C#</label>
+                        <input type="checkbox" id="interest" name="interest" value="C++">
+                        <label for="interest">C++</label>
+                        <input type="checkbox" id="interest" name="interest" value="PHP">
+                        <label for="interest">PHP</label>
+                    </div><br>
+
+                    <div class="regbutton">
+                        <input type="reset" value="Reset">
+                    <input type="button" value="Register" onclick="msg()">
+                    <script>
+                        function msg() {
+                          alert("Register successful !");
+                        }
+                    </script>
+                    </div>
+                
+                    </div>
+                </form>
+            </div>
+
+    </body>
+</html>
